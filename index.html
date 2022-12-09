@@ -1,98 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css-link  -->
-    <link rel="stylesheet" href="style/style.css">
-    <title>Payment Page SMB </title>
-</head>
-<body>
-    <header style=" 
-    box-shadow: 2px 2px 50px 2px rgba(130, 41, 224, 0.15);
-    border-radius: 8px;">
-        <img 
-        style=
-        "display: block;
-        margin-left: auto;
-        margin-right: auto;
-        " 
-        src="images/AK Black 1.png" alt="" srcset="">
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Payment Page SMB</title>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header
+      style="
+        background: #ffffff;
+        box-shadow: 2px 2px 50px 2px rgba(130, 41, 224, 0.2);
+      "
+    >
+      <img
+        style="display: block; margin-left: auto; margin-right: auto"
+        src="images/AK Black 1.png"
+        alt=""
+        srcset=""
+      />
     </header>
+    <!-- Header end -->
+    <!-- hero-section-start -->
     <section class="section">
+      <div>
+        <div style="display: flex; flex-direction: column">
+          <h4 style="margin-left: 32px">Contact information</h4>
+          <form class="form" action="">
+            <label for="fname">Full Name*</label>
+            <input
+              type="text"
+              id="fname"
+              name="fullname"
+              placeholder="Enter Full name"
+            />
+
+            <label for="lname">Email*</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter Email"
+            />
+
+            <label for="lname">Phone No*</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Enter Phone No"
+            />
+
+            <label for="payment">Payment Option*</label>
+            <select id="payment" name="payment">
+              <option value="select-payment-option">
+                Select Payment Option
+              </option>
+              <option value="americanexpress">American Express</option>
+              <option value="mastercard">Master Card</option>
+              <option value="visacard">Visa Card</option>
+            </select>
+            <label for="lname">Amount*</label>
+            <input
+              type="text"
+              id="amount"
+              name="amount"
+              placeholder="Enter Amount"
+            />
+          </form>
+        </div>
+        <!-- product-details-section -->
         <div>
-           <div style="display:flex;flex-direction:column">
-            <h4 style="margin-left: 32px;">Contact information</h4>
-            <form class="form" action="">
-                <label for="fname">Full Name*</label>
-                <input type="text" id="fname" name="fullname" placeholder="Enter Full name">
-
-                <label for="lname">Email*</label>
-                <input type="text" id="email" name="email" placeholder="Enter Email">
-
-                <label for="lname">Phone No*</label>
-                <input type="text" id="lname" name="lastname" placeholder="Enter Phone No">
-                
-                <label for="payment">Payment Option*</label>
-                <select id="payment" name="payment">
-                  <option value="select-payment-option">Select Payment Option</option>
-                  <option value="americanexpress">American Express</option>
-                  <option value="mastercard">Master Card</option>
-                  <option value="visacard">Visa Card</option>
-                </select>
-                <label for="lname">Amount*</label>
-                <input type="text" id="amount" name="amount" placeholder="Enter Amount">
-            </form>
-           </div>
-           <!-- product-details-section -->
-           <div >
-            <h4 style="margin-left:44px">Product Details</h4>
-           <div class="product">
-            <div class="product-details">
-                <p>The Incredible You Coach Training <br> 
-                    3-Month Course By Arfeen Khan</p>
-                    <p>USD 0.00</p>
-            </div>
-            <div class="product-details">
+          <h4 style="margin-left: 44px">Product Details</h4>
+          <div>
+            <div class="product">
+              <div class="product-details">
+                <p>
+                  The Incredible You Coach Training <br />
+                  3-Month Course By Arfeen Khan
+                </p>
+                <p>USD 0.00</p>
+              </div>
+              <div class="product-details">
                 <p class="amount-font">Total Amount :</p>
-                    <p>USD 0.00</p>
+                <p>USD 0.00</p>
+              </div>
+              <hr class="hr-line" />
+              <p style="margin-left: 44px; margin-top: 38px">
+                <input type="checkbox" name="" id="" />
+                <span class="program"
+                  >I understand that the amount I pay toward this program is
+                  non-refundable *</span
+                >
+              </p>
+              <p style="margin-left: 44px">
+                <input type="checkbox" name="" id="" />
+                <span class="program"
+                  >I understand that this program is not a money making scheme
+                  and there is no income guarantee *</span
+                >
+              </p>
+              <p style="margin-left: 44px">
+                <input type="checkbox" name="" id="" />
+                <span class="program"
+                  >I agree to
+                  <span
+                    style="
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 22px;
+                      line-height: 35px;
+                      color: #8229e0;
+                      text-decoration: underline;
+                    "
+                    >Terms and Conditions*</span
+                  ></span
+                >
+              </p>
+              <button>Buy Now</button>
+              <!-- payment-card-section -->
+              <section class="img-card">
+                <div>
+                  <img src="images/american-icon.png" alt="" srcset="" />
+                </div>
+                <div>
+                  <img src="images/master-cards.png" alt="" srcset="" />
+                </div>
+                <div>
+                  <img src="images/visa-cards.png" alt="" srcset="" />
+                </div>
+              </section>
             </div>
-            <hr class="hr-line" />
-           <p style="margin-left:44px;margin-top: 38px;"><input type="checkbox" name="" id="">
-            <span class="program">I understand that the amount I pay toward this program is non-refundable *</span></p>
-          <p style="margin-left:44px"> <input type="checkbox" name="" id="">
-            <span class="program">I understand that this program is not a money making scheme and 
-             there is no income guarantee *</span></p>
-          <p style="margin-left:44px"> <input type="checkbox" name="" id="">
-            <span class="program">I agree to <span style="
-                font-style: normal;
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 35px;
-                color: #8229E0;
-                text-decoration: underline;">Terms and Conditions*</span></span></p>
-                <button>Buy Now</button>
-                <!-- payment-card-section -->
-                <section class="img-card">
-                    <div>
-                        <img src="images/american-icon.png" alt="" srcset="">
-                    </div>
-                    <div>
-                        <img src="images/master-cards.png" alt="" srcset="">
-                    </div>
-                    <div>
-                        <img src="images/visa-cards.png" alt="" srcset="">
-                    </div>
-                </section>
-           </div>
-           </div>
+            <!-- secure-payment   -->
+            <section
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+                margin-top: 14px;
+              "
+            >
+              <div>
+                <img src="images/icons8-lock-64 (2).png" alt="" srcset="" />
+              </div>
+              <div>
+                <h4
+                  style="
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #444444;
+                    margin-bottom: 0;
+                  "
+                >
+                  Secure Payment
+                </h4>
+                <span
+                  style="
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #444444;
+                  "
+                >
+                  All orders are through a very secure network.Your credit card
+                  information is never stored in <br />
+                  any way. We respect your privacy
+                </span>
+                <div style="margin-top: 12px">
+                  <img
+                    style="padding: 5px"
+                    src="images/identity.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <img src="images/identity1.png" alt="" srcset="" />
+                  <img
+                    style="padding: 5px"
+                    src="images/identity2.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-        <div>
-            <h4 style="margin-left:45px;">Program information</h4>
-        <img class="banner" src="images/CryptoQlub 2.png" alt="" srcset="">
+        <div style="display: flex; align-items: center; gap: 20px">
+          <img src="images/icons8-headset-64.png" alt="" srcset="" />
+          <span
+            style="
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 26px;
+            "
+            >If you have any further questions, please contact us at <br />
+            <a style="color: #8229e0" href="#support@incrediblestar.com"
+              >support@incrediblestar.com.</a
+            ></span
+          >
         </div>
-
+      </div>
+      <div>
+        <h4 style="margin-left: 45px">Program information</h4>
+        <img class="banner" src="images/CryptoQlub 2.png" alt="" srcset="" />
+      </div>
     </section>
-</body>
+    <!-- hero-section-end -->
+    <hr
+      style="
+        width: 1770px;
+        height: 0px;
+        left: 75px;
+        top: 1889px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border: 1px solid #444444;
+      "
+    />
+    <!-- review section start -->
+
+    <section style="margin-left: 75px">
+      <h4
+        style="
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          letter-spacing: 0.2px;
+          text-transform: capitalize;
+          color: #444444;
+        "
+      >
+        See why people love the program
+      </h4>
+      <!-- people reviews start -->
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 30px;
+        "
+      >
+        <div class="review">
+          <p>
+            I used to have scarcity mindset! My relationship with money was
+            poor. “Lots of bad wealth codes. Went through many financial
+            challenges! I could not see myself as someone wealthy.
+          </p>
+          <p>
+            The Secret Millionaire Blueprint changed my mindset and my life!
+          </p>
+          <p>
+            This program gave me ability to build a rock solid wealth
+            foundation! In just 3 months, I've increased my client, income has
+            grown, I take more risks because I see possibilities to become
+            wealthy everywhere I go!”
+          </p>
+          <h3>
+            I've entered into the world of NFT and Metaverese, which was
+            literally unthinkable for me! This is the money school I never had!
+          </h3>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              gap: 24px;
+            "
+          >
+            <img
+              style="border-radius: 50%"
+              src="images/image 1.png"
+              alt=""
+              srcset=""
+            />
+            <span
+              style="
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                color: #8229e0;
+              "
+            >
+              - Dr.Sajid <br />
+              Bhanwadia India
+            </span>
+          </div>
+        </div>
+        <div class="review">
+          <p>
+            I joined the Secret Millionaire Blueprint with Shez with mixed
+            feelings of excitement and apprehension, being a senior citizen but
+            surviving on only my pension and some savings
+          </p>
+          <p>
+            in my own and others' lives in a really meaningful way, it has to be
+            NOW.
+          </p>
+          <p>
+            At times in the training group I feel very competent, yet recently
+            when felt that I was floundering, I reached out to my coach, Naina
+            and within a day, both she and Shez set up a meeting with me and
+            reassured me that my fears were normal but incorrect -
+          </p>
+          <h3>I was in fact achieving!!</h3>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              gap: 29px;
+            "
+          >
+            <img
+              style="border-radius: 50%"
+              src="images/image 2.png"
+              alt=""
+              srcset=""
+            />
+            <span
+              style="
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                color: #8229e0;
+              "
+            >
+              - Bev Frieslich <br />
+              South Africa
+            </span>
+          </div>
+        </div>
+        <div class="review">
+          <p>
+            I've been part of this program since last year. I've always wanted
+            to make big money, but never knew how to do it.
+          </p>
+          <p>
+            The best part of this program is the community it has, where
+            everyone pushes each other to achieve big wealth outcomes, and on
+            top of that the opportunities that are presented to us, are massive!
+          </p>
+          <p>
+            I've personally have been trading NFTs since last 2 months and have
+            flipped 5 to 6 NFTs already, many of them have been successful to
+            2X! I'm exploring new ways of creating wealth!
+          </p>
+          <h3>
+            I'm sure in the next few weeks, we as a group will achieve even
+            more!
+          </h3>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              gap: 24px;
+            "
+          >
+            <img
+              style="border-radius: 50%"
+              src="images/image 3.png"
+              alt=""
+              srcset=""
+            />
+            <span
+              style="
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                color: #8229e0;
+              "
+            >
+              - Sumesh Solanki
+              <br />
+              India
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- people reviews end -->
+    </section>
+
+    <!-- review section end -->
+  </body>
 </html>
