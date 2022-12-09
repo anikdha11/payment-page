@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css-link  -->
+    <link rel="stylesheet" href="style/style.css">
+    <title>Payment Page SMB </title>
+</head>
+<body>
+    <header style=" 
+    box-shadow: 2px 2px 50px 2px rgba(130, 41, 224, 0.15);
+    border-radius: 8px;">
+        <img 
+        style=
+        "display: block;
+        margin-left: auto;
+        margin-right: auto;
+        " 
+        src="images/AK Black 1.png" alt="" srcset="">
+    </header>
+    <section class="section">
+        <div>
+           <div style="display:flex;flex-direction:column">
+            <h4 style="margin-left: 32px;">Contact information</h4>
+            <form class="form" action="">
+                <label for="fname">Full Name*</label>
+                <input type="text" id="fname" name="fullname" placeholder="Enter Full name">
+
+                <label for="lname">Email*</label>
+                <input type="text" id="email" name="email" placeholder="Enter Email">
+
+                <label for="lname">Phone No*</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter Phone No">
+                
+                <label for="payment">Payment Option*</label>
+                <select id="payment" name="payment">
+                  <option value="select-payment-option">Select Payment Option</option>
+                  <option value="americanexpress">American Express</option>
+                  <option value="mastercard">Master Card</option>
+                  <option value="visacard">Visa Card</option>
+                </select>
+                <label for="lname">Amount*</label>
+                <input type="text" id="amount" name="amount" placeholder="Enter Amount">
+            </form>
+           </div>
+           <!-- product-details-section -->
+           <div >
+            <h4 style="margin-left:44px">Product Details</h4>
+           <div class="product">
+            <div class="product-details">
+                <p>The Incredible You Coach Training <br> 
+                    3-Month Course By Arfeen Khan</p>
+                    <p>USD 0.00</p>
+            </div>
+            <div class="product-details">
+                <p class="amount-font">Total Amount :</p>
+                    <p>USD 0.00</p>
+            </div>
+            <hr class="hr-line" />
+           <p style="margin-left:44px;margin-top: 38px;"><input type="checkbox" name="" id="">
+            <span class="program">I understand that the amount I pay toward this program is non-refundable *</span></p>
+          <p style="margin-left:44px"> <input type="checkbox" name="" id="">
+            <span class="program">I understand that this program is not a money making scheme and 
+             there is no income guarantee *</span></p>
+          <p style="margin-left:44px"> <input type="checkbox" name="" id="">
+            <span class="program">I agree to <span style="
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 35px;
+                color: #8229E0;
+                text-decoration: underline;">Terms and Conditions*</span></span></p>
+                <button>Buy Now</button>
+                <!-- payment-card-section -->
+                <section class="img-card">
+                    <div>
+                        <img src="images/american-icon.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <img src="images/master-cards.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <img src="images/visa-cards.png" alt="" srcset="">
+                    </div>
+                </section>
+           </div>
+           </div>
+        </div>
+        <div>
+            <h4 style="margin-left:45px;">Program information</h4>
+        <img class="banner" src="images/CryptoQlub 2.png" alt="" srcset="">
+        </div>
+
+    </section>
+</body>
+</html>
