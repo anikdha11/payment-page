@@ -1,13 +1,10 @@
 body {
   font-family: "SF Pro Display";
   width: 1920px;
-  height: 2425px;
-  margin-left: auto;
-  margin-right: auto;
   background: #ffffff;
 }
 
-.section {
+.hero-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -16,11 +13,11 @@ body {
 }
 
 /* Contact-form */
+
 .form {
   display: flex;
   flex-direction: column;
   padding-top: 1.9rem;
-  width: 870px;
   box-shadow: 2px 2px 50px 2px rgba(130, 41, 224, 0.15);
   border-radius: 8px;
 }
@@ -96,8 +93,15 @@ h4 {
   height: 0px;
   left: 18px;
   top: 215px;
-
   border: 0.5px solid #444444;
+}
+.hr-line2 {
+  width: 1770px;
+  left: 75px;
+  top: 1889px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 1px solid #444444;
 }
 .program {
   font-style: normal;
@@ -133,7 +137,23 @@ button {
 .img-card div {
   margin-bottom: 36px;
 }
+
+/* review section */
+
+.review-section {
+  width: 1770px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* people reviews */
+
+.people-review {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
 
 .review {
   background: #ffffff;
@@ -155,4 +175,36 @@ button {
 .review h3 {
   color: #444444;
   text-align: center;
+}
+
+/* Responsive for mobile device */
+@media only screen and (max-width: 688px) {
+  body {
+    width: 750px;
+    margin: 2rem;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .review-section {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .people-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hr-line2 {
+    width: 750px;
+  }
 }
